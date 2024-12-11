@@ -1,12 +1,8 @@
 html{
-    background-color: black;
+    background-color: wblack;
     color: white;
 }
 
-.navbar{
-    background-color: black;
-}
-
-.nav-link{
+.dropdown-item{
     color: white;
 }
