@@ -1,3 +1,9 @@
+html{
+    font-size: 130%;
+    background-color: white;
+}
+
+
 .projectlist{
     list-style-type: none;
 }
