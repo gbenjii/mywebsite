@@ -6,7 +6,7 @@ html{
 
 
 
-.line-1{
+.typewriter{
     position: center;
     top: 50%;  
     width: 24em;
@@ -20,7 +20,7 @@ html{
 }
 
 
-.anim-typewriter{
+.typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
