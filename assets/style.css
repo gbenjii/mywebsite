@@ -1,3 +1,4 @@
+/*Minden html*/
 html {
     font-size: 130%;
   }
@@ -46,7 +47,8 @@ html {
     background-size: cover;
     background-color: rgba(255,255,255,0.5);
   }
-  
+  /*Home/mindenidáig/*
+  /*Login*/
   .bodylogin {
     background-color: #3498DB;
     font-family: "Arial", sans-serif;
@@ -99,6 +101,7 @@ html {
   .projectlist{
     list-style-type: none;
 }
+/*Login idáig*/
 
 .rolam {
     list-style-type: circle;
