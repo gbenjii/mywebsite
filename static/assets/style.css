@@ -88,7 +88,11 @@
     transition: border .2s, background-color .2s;
   }
   
-  
+
+.navbar-nav{
+  font-size: 40px;
+}
+
   .formlogin .btn {
     background-color: #3498DB;
     color: #fff;
