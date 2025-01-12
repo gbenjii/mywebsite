@@ -14,6 +14,11 @@ div {
     color: red;
 }
 
+
+.projectlist > a{
+    font-size: 10px;
+}
+
 div p {
     margin: 5px;
 }
