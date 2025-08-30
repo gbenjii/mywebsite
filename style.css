@@ -1,0 +1,112 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('hatter2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+}
+
+.udv {
+    text-align: center;
+    color: white;
+}
+
+
+.cenleft {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 10px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+.bemutatkozas {
+    width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+}
+
+.profile-pic {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0;
+    flex-shrink: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+@media (max-width: 768px) {
+    .bemutatkozas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        padding: 10px;
+    }
+
+    .profile-pic {
+        margin-top: 20px;
+    }
+}
+
+.profile-pic {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.elerhetosegek {
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin-top: 12%;
+}
+
+.elerhetosegek_links {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 200px;
+    padding: 15px 24px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    align-items: center;
+    background: url("hatter2.png") center/cover no-repeat; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 20px;
+}

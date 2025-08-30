@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    transition: all 0.3s ease;
+    z-index: 999;
+    background: url("hatter2.png") center/cover no-repeat; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header.shrink {
+    padding: 8px 40px;
+    background-size: cover;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a.active {
+    color: black;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(30, 30, 30, 0.95);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 220px;
+        padding: 10px 0;
+        border-radius: 0 0 0 8px;
+        overflow: hidden;
+    }
+
+    nav a {
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+        background: rgba(255,255,255,0.05);
+    }
+
+    nav.active {
+        display: flex;
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-10px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+}
+
+
